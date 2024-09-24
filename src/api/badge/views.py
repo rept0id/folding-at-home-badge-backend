@@ -22,7 +22,7 @@ def badge_view(request, username):
 
     res = HttpResponse(badge_image.content, content_type='image/svg+xml')
 
-    res['Expires'] = format_datetime(datetime.utcnow() + timedelta(hours=12), usegmt=True)
+    res['Expires'] = format_datetime((datetime.utcnow() + timedelta(hours=12)), usegmt=True)
     res['Cache-Control'] = 'public, max-age=43200'  # 43200 seconds = 12 hours
     res['Pragma'] = 'no-cache'
     res['Last-Modified'] = format_datetime(datetime.utcnow(), usegmt=True)
