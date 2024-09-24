@@ -2,6 +2,10 @@
 
 ![](https://folding-at-home-badge-backend.simplecode.gr/api/badge/rept0id/)
 
+## Purpose
+
+The purpose of this GitHub repository is to provide a badge (primarily a GitHub badge) that displays the points of a Folding@Home user, promoting contributing to Folding@Home.
+
 ## User
 
 ### How to use
