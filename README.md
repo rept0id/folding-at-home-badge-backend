@@ -1,6 +1,6 @@
 # folding-at-home-badge-backend
 
-![](https://folding-at-home-badge-backend.simplecode.gr/api/badge/rept0id/)
+![](https://folding-at-home-badge-backend.simplecode.gr/api/badge/rept0id/?cache-control=no-cache)
 
 ![](./doc/assets/img/header1.png)
 
