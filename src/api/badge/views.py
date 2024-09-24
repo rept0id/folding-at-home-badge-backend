@@ -25,7 +25,7 @@ def badge_view(request, username):
     res['Expires'] = format_datetime(datetime.now(timezone.utc) + timedelta(hours=12), usegmt=True)
     res['Cache-Control'] = 'public, max-age=43200'
     res['Pragma'] = 'no-cache'
-    res['Last-Modified'] = format_datetime(datetime.utcnow(), usegmt=True)
-    res['ETag'] = f'W/"{points}-{int(datetime.utcnow().timestamp())}"'
+    res['Last-Modified'] = format_datetime(datetime.now(timezone.utc), usegmt=True)
+    res['ETag'] = f'W/"{points}-{int(datetime.now(timezone.utc).timestamp())}"'
 
     return res
