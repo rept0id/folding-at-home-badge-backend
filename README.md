@@ -14,7 +14,7 @@ Then, you can add this badge to any repo by :
 ![](https://folding-at-home-badge-backend.simplecode.gr/api/badge/rept0id/)
 ``` 
 
-Frontend coming soon by 🌼 [Irina Kalman](https://www.github.com/irinakalman). 🌼
+Frontend coming soon by 🌼 [Irina Kalman](https://www.github.com/irinakalman) 🌼.
 
 ## Developer
 
