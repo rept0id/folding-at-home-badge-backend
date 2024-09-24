@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+
+  api:
+    build:
+      context: ./src/api
+      dockerfile: Dockerfile
+    expose : 
+      - "8000"
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - net_internal
+
+  proxy:
+    image: nginx:latest
+    ports:
+      - "${PROXY_INTERFACE}:${PROXY_PORT}:80"
+    volumes:
+      - ./proxy/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - api
+    restart: always
+    networks:
+      - net_internal
+
+networks:
+  net_internal:
+    driver: bridge
