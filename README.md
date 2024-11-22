@@ -47,3 +47,6 @@ First and every other time :
 ```
 sudo docker-compose up -d --build
 ```
+
+
+![](./doc/assets/img/github-mark.png)
